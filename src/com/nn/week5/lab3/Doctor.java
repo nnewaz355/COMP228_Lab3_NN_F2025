@@ -19,12 +19,28 @@ public class Doctor extends Person {
 	
 	public void diagnosePatient() {
 		// logic goes here
-		
+		//System.out.println(this.name + " is diagnosing a patient.");
 	}
 	
 	@Override
 	public void performDuties() {
-		// logic goes here
+		//System.out.println(this.name + " is examining and treating patients.");
+	}
+
+	public String getSpecialization() {
+		return specialization;
+	}
+
+	public void setSpecialization(String specialization) {
+		this.specialization = specialization;
+	}
+
+	public double getConsultationFee() {
+		return consultationFee;
+	}
+
+	public void setConsultationFee(double consultationFee) {
+		this.consultationFee = consultationFee;
 	}
 
 }

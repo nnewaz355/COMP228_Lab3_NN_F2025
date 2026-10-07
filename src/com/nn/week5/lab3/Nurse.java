@@ -19,4 +19,20 @@ public class Nurse extends Person {
 	public void performDuties() {
 		// logic goes here
 	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public String getShift() {
+		return shift;
+	}
+
+	public void setShift(String shift) {
+		this.shift = shift;
+	}
 }
