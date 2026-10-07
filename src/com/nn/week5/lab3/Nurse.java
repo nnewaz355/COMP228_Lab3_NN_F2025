@@ -13,11 +13,13 @@ public class Nurse extends Person {
 	
 	public void assistPatient() {
 		// logic goes here
+		System.out.println(this.getName() + " is assisting a patient.");
 	}
 	
 	@Override
 	public void performDuties() {
 		// logic goes here
+		System.out.println(this.getName() + " is providing nursing care.");
 	}
 
 	public String getDepartment() {
