@@ -19,12 +19,12 @@ public class Doctor extends Person {
 	
 	public void diagnosePatient() {
 		// logic goes here
-		//System.out.println(this.name + " is diagnosing a patient.");
+		System.out.println(this.getName() + " is diagnosing a patient.");
 	}
 	
 	@Override
 	public void performDuties() {
-		//System.out.println(this.name + " is examining and treating patients.");
+		System.out.println(this.getName() + " is examining and treating patients.");
 	}
 
 	public String getSpecialization() {
