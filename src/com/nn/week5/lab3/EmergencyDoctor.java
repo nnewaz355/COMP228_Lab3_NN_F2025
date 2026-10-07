@@ -8,18 +8,22 @@ public class EmergencyDoctor extends Doctor implements MedicalProfessional, Bill
 	
 	public void handleEmergency() {
 		// logic goes here
+		System.out.println(this.getName() + " is handling a medical emergency.");
 	}
 	
 	public void prescribeMedication() {
 		// logic goes here
+		System.out.println(this.getName() + " is prescribing medication.");
 	}
 	
 	public void generateBill() {
 		// logic goes here
+		System.out.println(this.getName() + " generated an emergency treatment bill.");
 	}
 	
 	@Override
 	public void performDuties() {
 		// logic goes here
+		System.out.println(this.getName() + " is providing emergency medical care.");
 	}
 }
