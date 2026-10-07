@@ -13,11 +13,13 @@ public class Surgeon extends Doctor {
 	
 	public void performSurgery() {
 		// logic goes here
+		System.out.println(this.getName() + " is performing surgical duties.");
 	}
 	
 	@Override
 	public void performDuties() {
 		//logic goes here
+		System.out.println(this.getName() + " is performing " + this.getSurgeryType() + " surgery in Operating Surgery " + this.getOperatingRoom());
 	}
 
 	public String getSurgeryType() {
