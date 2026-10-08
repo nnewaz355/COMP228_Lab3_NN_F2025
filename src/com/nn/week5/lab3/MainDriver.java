@@ -40,10 +40,21 @@ public class MainDriver {
 		emgDoc.generateBill();
 		
 		//Polymorphism
+		
+		System.out.println("\n----- POLYMORPHISM -----");
+		Person person;
+		person = doc;
+		person.performDuties();
+		person = nurse;
+		person.performDuties();
+		person = surgeon;
+		person.performDuties();
+		person = emgDoc;
+		person.performDuties();
+		
 		System.out.println("\n----- POLYMORPHISM USING ARRAY -----");
 		
 		//Prime the person object for specializing and populate specialized objects into array
-		Person person;
 		Person people[] = {doc, nurse, surgeon, emgDoc}; 
 		
 		//Display info and perform duties for each person
@@ -51,6 +62,9 @@ public class MainDriver {
 			System.out.println("\n"+p);
 			p.performDuties();
 		}
+		
+		//Signal End of Demo
+		System.out.println("\n==================================\n       END OF DEMONSTRATION\n==================================");
 	}
 
 }
