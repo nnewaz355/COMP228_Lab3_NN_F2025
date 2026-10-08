@@ -28,7 +28,12 @@ public class MainDriver {
 		nurse.performDuties();
 		nurse.assistPatient();
 		
-		
+		//Invoke Surgeon's Methods
+		System.out.println("\n--- SURGEON ---");
+		System.out.println(surgeon);
+		surgeon.performDuties();
+		surgeon.diagnosePatient();
+		surgeon.performSurgery();
 	}
 
 }
