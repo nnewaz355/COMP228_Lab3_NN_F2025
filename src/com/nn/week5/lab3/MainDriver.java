@@ -6,35 +6,31 @@ public class MainDriver {
 		// TODO Auto-generated method stub
 		// Person person1, person2, person3, person4; try again in polymorphism section
 		
-		Doctor doc = new Doctor(1001, "Chloe", 28, "Neurology", 175.50);
-		Nurse nurse = new Nurse(1002, "Kai", 29, "Cardiology", "Day");
-		Surgeon surgeon = new Surgeon(1003, "Blaze", 30, "Orthopedics", 350.00, "Trauma Reconstruction", 4);
-		EmergencyDoctor emgDoc = new EmergencyDoctor(1004, "Nova", 27, "Critical Care", 220.00);
 		
 		System.out.println("========================================\n       HOSPITAL MANAGEMENT SYSTEM\n========================================");
 		
 		//Invoke Doctor's Methods
 		System.out.println("\n--- DOCTOR ---");
-		System.out.println(doc);
+		Doctor doc = new Doctor(1001, "Chloe", 28, "Neurology", 175.50);
 		doc.performDuties();
 		doc.diagnosePatient();
 		
 		//Invoke Nurse's Methods
 		System.out.println("\n--- NURSE ---");
-		System.out.println(nurse);
+		Nurse nurse = new Nurse(1002, "Kai", 29, "Cardiology", "Day");
 		nurse.performDuties();
 		nurse.assistPatient();
 		
 		//Invoke Surgeon's Methods
 		System.out.println("\n--- SURGEON ---");
-		System.out.println(surgeon);
+		Surgeon surgeon = new Surgeon(1003, "Blaze", 30, "Orthopedics", 350.00, "Trauma Reconstruction", 4);
 		surgeon.performDuties();
 		surgeon.diagnosePatient();
 		surgeon.performSurgery();
 		
 		//Invoke Emergency Doctor's Methods
 		System.out.println("\n--- EMERGENCY DOCTOR ---");
-		System.out.println(emgDoc);
+		EmergencyDoctor emgDoc = new EmergencyDoctor(1004, "Nova", 27, "Critical Care", 220.00);
 		emgDoc.performDuties();
 		emgDoc.prescribeMedication();
 		emgDoc.generateBill();
@@ -59,7 +55,6 @@ public class MainDriver {
 		
 		//Display info and perform duties for each person
 		for (Person p : people) {
-			System.out.println("\n"+p);
 			p.performDuties();
 		}
 		
