@@ -34,6 +34,13 @@ public class MainDriver {
 		surgeon.performDuties();
 		surgeon.diagnosePatient();
 		surgeon.performSurgery();
+		
+		//Invoke Emergency Doctor's Methods
+		System.out.println("\n--- EMERGENCY DOCTOR ---");
+		System.out.println(emgDoc);
+		emgDoc.performDuties();
+		emgDoc.prescribeMedication();
+		emgDoc.generateBill();
 	}
 
 }
