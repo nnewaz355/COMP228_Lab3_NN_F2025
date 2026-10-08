@@ -6,13 +6,21 @@ public class MainDriver {
 		// TODO Auto-generated method stub
 		
 		// Declaring Person variables (polymorphism)
-		Person person1, person2, person3, person4;
+		// Person person1, person2, person3, person4; try again in polymorphism section
 		
 		//Specializing the Person variables
-		person1 = new Doctor(1001, "Chloe", 28, "Neurology", 175.50);
-		person2 = new Nurse(1002, "Kai", 29, "Cardiology", "Day");
-		person3 = new Surgeon(1003, "Blaze", 30, "Orthopedics", 350.00, "Trauma Reconstruction", 4);
-		person4 = new EmergencyDoctor(1004, "Nova", 27, "Critical Care", 220.00);
+		Doctor doc = new Doctor(1001, "Chloe", 28, "Neurology", 175.50);
+		Nurse nurse = new Nurse(1002, "Kai", 29, "Cardiology", "Day");
+		Surgeon surgeon = new Surgeon(1003, "Blaze", 30, "Orthopedics", 350.00, "Trauma Reconstruction", 4);
+		EmergencyDoctor emgDoc = new EmergencyDoctor(1004, "Nova", 27, "Critical Care", 220.00);
+		
+		System.out.println("========================================\n       HOSPITAL MANAGEMENT SYSTEM\n========================================\n");
+		
+		//Trigger Doctor's Methods
+		System.out.println("--- DOCTOR ---");
+		System.out.println(doc);
+		doc.performDuties();
+		doc.diagnosePatient();
 	}
 
 }
