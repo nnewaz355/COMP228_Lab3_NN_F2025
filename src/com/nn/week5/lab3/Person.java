@@ -39,4 +39,8 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String toString() {
+		return "Person ID: " + this.personId + "\nName: " + this.name + "\nAge: " + this.age;
+	}
 }
