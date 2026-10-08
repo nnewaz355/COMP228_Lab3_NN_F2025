@@ -14,13 +14,21 @@ public class MainDriver {
 		Surgeon surgeon = new Surgeon(1003, "Blaze", 30, "Orthopedics", 350.00, "Trauma Reconstruction", 4);
 		EmergencyDoctor emgDoc = new EmergencyDoctor(1004, "Nova", 27, "Critical Care", 220.00);
 		
-		System.out.println("========================================\n       HOSPITAL MANAGEMENT SYSTEM\n========================================\n");
+		System.out.println("========================================\n       HOSPITAL MANAGEMENT SYSTEM\n========================================");
 		
-		//Trigger Doctor's Methods
-		System.out.println("--- DOCTOR ---");
+		//Invoke Doctor's Methods
+		System.out.println("\n--- DOCTOR ---");
 		System.out.println(doc);
 		doc.performDuties();
 		doc.diagnosePatient();
+		
+		//Invoke Nurse's Methods
+		System.out.println("\n--- NURSE ---");
+		System.out.println(nurse);
+		nurse.performDuties();
+		nurse.assistPatient();
+		
+		
 	}
 
 }
